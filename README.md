@@ -12,6 +12,12 @@
   - ✅ Linting
 - 🔐 Validates your env vars on build and start
 
+## Deploy on Northflank
+
+This is the default tRPC + Next.js + Prisma starter with a Dockerfile, added so that it can be built and deployed on Northflank.
+
+View the [Northflank guide here](https://northflank.com/guides/deploy-trpc-on-northflank).
+
 
 ## Setup
 
