@@ -1,12 +1,13 @@
 FROM node:16-alpine AS build
 WORKDIR /app
 
+ARG DATABASE_URL
+
 COPY package.json package.json
 COPY yarn.lock yarn.lock
 COPY tsconfig.json tsconfig.json
 
 COPY next.config.js next.config.js
-COPY .env .env
 COPY src ./src
 COPY public ./public
 COPY prisma ./prisma
